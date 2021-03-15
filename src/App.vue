@@ -181,10 +181,8 @@ export default {
       const minValue = Math.min(...this.graph);
       return this.graph.map(
         price => 5 + ((price - minValue) * 95) / (maxValue - minValue)
-      )
+      );
     }
   }
 };
 </script>
-
-<style src="./app.css"></style>
